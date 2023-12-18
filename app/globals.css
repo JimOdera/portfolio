@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+/* CODE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.active {
+    color: #4db5ff;
+}
+
+/* Add this to your styles (CSS) */
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  transition: scroll-behavior 0.5s ease-in-out; /* Adjust the duration (0.5s) as needed */
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  scroll-snap-align: center;
+}
+
